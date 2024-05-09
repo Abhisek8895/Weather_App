@@ -1,8 +1,8 @@
-# Flask Weather App
+# Weather App
 
 ## Overview
 
-Flask Weather App is a simple yet powerful tool designed to provide real-time weather information for any city worldwide. Built using Flask, a lightweight Python web framework, and powered by the OpenWeather API, it allows users to effortlessly retrieve weather data by simply entering the name of the desired city. Whether you're a developer looking to integrate weather functionality into your applications or an everyday user curious about the current weather conditions, this app offers a seamless experience.
+Weather App is a simple yet powerful tool designed to provide real-time weather information for any city worldwide. Built using HTML, CSS, Bootstrap, and a touch of JavaScript, it allows users to effortlessly retrieve weather data by simply entering the name of the desired city. Weather data is fetched from the OpenWeather API, ensuring accurate and up-to-date information. Whether you're a developer looking to integrate weather functionality into your applications or an everyday user curious about the current weather conditions, this app offers a seamless experience.
 
 ## Features
 
@@ -21,13 +21,15 @@ To use the Flask Weather App, simply clone the repository and install the requir
 1. Clone the repository:
 
 ```
-git clone https://github.com/your_username/flask-weather-app.git
+git clone https://github.com/Abhisek8895/Weather_App
 ```
 
 2. Install dependencies:
 
 ```
-pip install -r requirements.txt
+pip install flask
+pip install timezonefinder
+pip install python-dotenv
 ```
 
 3. Run the Flask application:
