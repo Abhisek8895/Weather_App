@@ -1,1 +1,4 @@
-<p> This Is A python Flask Project</p>
+<h1>Weather App</h1>
+<p>This Weather App is a simple yet powerful tool designed to provide real-time weather information for any city worldwide. Built using Flask, a lightweight Python web framework, and powered by the OpenWeather API, it allows users to effortlessly retrieve weather data by simply entering the name of the desired city. Whether you're a developer looking to integrate weather functionality into your applications or an everyday user curious about the current weather conditions, this app offers a seamless experience. With its clean interface and reliable data source, you can trust this Weather App to keep you informed about the latest weather updates anytime, anywhere.</p>
+<p>Snapshot from the Application</p>
+![image](https://github.com/Abhisek8895/Weather_App/assets/87350495/8bc44e4e-f54a-42bc-80eb-bfecbb99347b)
