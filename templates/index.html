@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Costum CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid px-1 px-sm-3 py-5 mx-auto">
+        <div class="row d-flex justify-content-center">
+            <div class="row card0">
+                <div class="card1 col-lg-8 col-md-7">
+                    <small id="title">My Weather App</small>
+                    <div class="text-center">
+                        <img class="image mt-5" src="{{ url_for('static', filename='assets/image/Air Baloon.png') }}">
+                    </div>
+                    <div class="row px-3 mt-3 mb-3">
+                        <h1 class="large-font mr-3">{{weather.temp}}&#176;C</h1>
+                        <div class="d-flex flex-column mr-3">
+                            <h2 class="mt-3 mb-0">{{weather.name}}</h2>
+                            <small>{{weather.time}} - {{weather.day}}, {{weather.date}}</small>
+                        </div>
+                        <div class="d-flex flex-column text-center">
+                            <img src="{{weather_icon_url}}" alt="">
+
+                            <small>{{weather.desc}}</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="card2 col-lg-4 col-md-5">
+                    <div class="row px-3">
+                        <form action="/" method="post" id="weatherForm">
+                            
+                            <input type="text" name="location" id="cityInput" placeholder="Another location" class="mb-5 city-input" >
+                            <!-- <div class="fa fa-search mb-5 mr-0 text-center"></div> -->
+                            <button type="submit" class="fa fa-search mb-5 mr-0 text-center"></button>
+                    </div>
+                    <div class="mr-5">
+                        <input type="button" value="Bengaluru" class="light-text suggestion" data-city = 'Bengaluru' value = 'Bengaluru' name="location">
+                        <br>
+                        <input type="button" value="Delhi" class="light-text suggestion" data-city = 'Delhi' name="location">
+                        <br>
+                        <input type="button" value="Mumbai" class="light-text suggestion" data-city = 'Mumbai' name="location">
+                        <br>
+                        <input type="button" value="New York" class="light-text suggestion" data-city = 'New York' name="location">
+                        <br>
+                        <input type="button" value="Dubai" class="light-text suggestion" data-city = 'Dubai' name="location">
+                        </form>
+
+                        <div class="line my-5"></div>
+
+                        <p>Weather Details</p>
+                        <div class="row px-3">
+                            <p class="light-text">Cloud</p>
+                            <p class="ml-auto">{{weather.cloud}}%</p>
+                        </div>
+                        <div class="row px-3">
+                            <p class="light-text">Humidity</p>
+                            <p class="ml-auto">{{weather.humidity}}%</p>
+                        </div>
+                        <div class="row px-3">
+                            <p class="light-text">Wind</p>
+                            <p class="ml-auto">{{weather.wind}} m/s</p>
+                        </div>
+                        <div class="row px-3">
+                            <p class="light-text">Pressure</p>
+                            <p class="ml-auto">{{weather.pressure}} hPa</p>
+                        </div>
+
+                        <div class="line mt-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- Costum JS -->
+<script src="{{ url_for('static', filename= 'js/script.js') }}"></script>
+</html>
