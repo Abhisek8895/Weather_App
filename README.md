@@ -15,30 +15,3 @@ Weather App is a simple yet powerful tool designed to provide real-time weather 
 ## Usage
 
 To use the Flask Weather App, simply clone the repository and install the required dependencies using `pip`. Then, run the Flask application using the provided command. Once the server is running, access the app through your web browser and enter the name of the desired city to retrieve its weather information.
-
-## Installation
-
-1. Clone the repository:
-
-```
-git clone https://github.com/Abhisek8895/Weather_App
-```
-
-2. Install dependencies:
-
-```
-pip install flask
-pip install timezonefinder
-pip install python-dotenv
-```
-
-3. Run the Flask application:
-
-```
-python main.py
-```
-
-4. Access the app in your web browser at `http://localhost:5000`.
-
-
----
