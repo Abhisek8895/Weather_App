@@ -35,7 +35,7 @@ pip install python-dotenv
 3. Run the Flask application:
 
 ```
-python app.py
+python main.py
 ```
 
 4. Access the app in your web browser at `http://localhost:5000`.
